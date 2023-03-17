@@ -3,7 +3,6 @@ import pytest
 from src.item import Item
 
 
-
 @pytest.fixture()
 def item_1():
     return Item("Test1", 10000, 20)
@@ -51,3 +50,12 @@ def test_string_to_number():
 def test_instantiate_from_csv(item_from_csv):
     assert len(Item.all) == 5
 
+
+def test_str(item_1, item_2):
+    assert str(item_1) == 'Test1'
+    assert str(item_2) == 'Test2'
+
+
+def test_repr(item_1, item_2):
+    assert repr(item_1) == "Item('Test1', 10000, 20)"
+    assert repr(item_2) == "Item('Test2', 20000, 30)"
