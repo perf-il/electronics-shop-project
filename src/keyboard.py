@@ -29,6 +29,7 @@ class KeyBoard(Item, MixinLang):
 
     def __init__(self, name: str, price: float, quantity: int) -> None:
         super().__init__(name, price, quantity)
+        MixinLang.__init__(self)
 
 
 
