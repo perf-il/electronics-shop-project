@@ -53,8 +53,8 @@ def test_string_to_number():
     assert Item.string_to_number('aaa') == 'Введено некорректное значение'
 
 
-#def test_instantiate_from_csv(item_from_csv):
-#   assert len(Item.all) == 5
+def test_instantiate_from_csv(item_from_csv):
+   assert len(Item.all) == 5
 
 
 def test_str(item_1, item_2):
