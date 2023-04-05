@@ -26,7 +26,7 @@ class Item:
             return 'Введено некорректное значение'
 
     @classmethod
-    def instantiate_from_csv(cls, path='../src/items_er.csv'):
+    def instantiate_from_csv(cls, path='../src/items.csv'):
         cls.all.clear()
         # пробуем открыть файл items.csv
         try:
