@@ -22,7 +22,7 @@ class Item:
     def string_to_number(str_num: str):
         try:
             return int(float(str_num))
-        except TypeError:
+        except ValueError:
             return 'Введено некорректное значение'
 
     @classmethod
